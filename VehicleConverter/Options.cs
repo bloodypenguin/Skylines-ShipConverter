@@ -1,9 +1,9 @@
 ﻿using System.Xml.Serialization;
-using VehicleConverter.OptionsFramework.Attibutes;
+using FerryConverter.OptionsFramework.Attibutes;
 
-namespace VehicleConverter
+namespace FerryConverter
 {
-    [Options("TrainConverter-Options")]
+    [Options("FerryConverter-Options")]
     public class Options
     {
         private const string MOM = "Trains to metro - Require Metro Overhaul Mod (MOM)";

@@ -1,6 +1,6 @@
-﻿using VehicleConverter.Config;
+﻿using FerryConverter.Config;
 
-namespace VehicleConverter
+namespace FerryConverter
 {
     public static class TrainConversions
     {

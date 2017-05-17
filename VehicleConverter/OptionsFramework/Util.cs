@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace VehicleConverter.OptionsFramework
+namespace FerryConverter.OptionsFramework
 {
     internal class Util
     {

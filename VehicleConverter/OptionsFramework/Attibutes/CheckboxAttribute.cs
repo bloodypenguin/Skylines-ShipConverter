@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VehicleConverter.OptionsFramework.Attibutes
+namespace FerryConverter.OptionsFramework.Attibutes
 {
     [AttributeUsage(AttributeTargets.Property)]
     public class CheckboxAttribute : AbstractOptionsAttribute

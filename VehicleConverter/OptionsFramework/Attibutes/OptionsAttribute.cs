@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VehicleConverter.OptionsFramework.Attibutes
+namespace FerryConverter.OptionsFramework.Attibutes
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
     public class OptionsAttribute : Attribute

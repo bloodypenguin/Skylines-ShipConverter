@@ -7,8 +7,8 @@
     <ProjectGuid>{789F1E19-D568-4D33-842D-B5F28DA23E55}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VehicleConverter</RootNamespace>
-    <AssemblyName>VehicleConverter</AssemblyName>
+    <RootNamespace>FerryConverter</RootNamespace>
+    <AssemblyName>FerryConverter</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Xml.Serialization;
 
-namespace VehicleConverter.Config
+namespace FerryConverter.Config
 {
     [Serializable]
     public class StationItem

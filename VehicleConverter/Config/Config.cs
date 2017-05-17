@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Xml.Serialization;
-using VehicleConverter.OptionsFramework.Attibutes;
+using FerryConverter.OptionsFramework.Attibutes;
 
-namespace VehicleConverter.Config
+namespace FerryConverter.Config
 {
-    [Options("TrainConverter-Config")]
+    [Options("FerryConverter-Config")]
     public class Config
     {
         public Config()

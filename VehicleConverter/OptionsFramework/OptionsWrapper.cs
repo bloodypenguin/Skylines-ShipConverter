@@ -4,9 +4,9 @@ using System.Xml;
 using System.Xml.Serialization;
 using ColossalFramework.IO;
 using UnityEngine;
-using VehicleConverter.OptionsFramework.Attibutes;
+using FerryConverter.OptionsFramework.Attibutes;
 
-namespace VehicleConverter.OptionsFramework
+namespace FerryConverter.OptionsFramework
 {
     public class OptionsWrapper<T>
     {

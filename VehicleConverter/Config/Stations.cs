@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using ColossalFramework.UI;
-using VehicleConverter.OptionsFramework;
+using FerryConverter.OptionsFramework;
 
-namespace VehicleConverter.Config
+namespace FerryConverter.Config
 {
     public static class Stations
     {

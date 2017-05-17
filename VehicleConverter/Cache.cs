@@ -1,4 +1,4 @@
-﻿namespace VehicleConverter
+﻿namespace FerryConverter
 {
     public static class Cache
     {

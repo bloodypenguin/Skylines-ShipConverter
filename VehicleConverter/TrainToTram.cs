@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Linq;
 using UnityEngine;
-using VehicleConverter.Config;
+using FerryConverter.Config;
 using Object = UnityEngine.Object;
 
-namespace VehicleConverter
+namespace FerryConverter
 {
     public class TrainToTram
     {

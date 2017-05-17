@@ -6,9 +6,9 @@ using System.Reflection;
 using ColossalFramework.UI;
 using ICities;
 using UnityEngine;
-using VehicleConverter.OptionsFramework.Attibutes;
+using FerryConverter.OptionsFramework.Attibutes;
 
-namespace VehicleConverter.OptionsFramework.Extensions
+namespace FerryConverter.OptionsFramework.Extensions
 {
     public static class UIHelperBaseExtensions
     {

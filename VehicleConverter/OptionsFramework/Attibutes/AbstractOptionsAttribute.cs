@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace VehicleConverter.OptionsFramework.Attibutes
+namespace FerryConverter.OptionsFramework.Attibutes
 {
     public abstract class AbstractOptionsAttribute : Attribute
     {

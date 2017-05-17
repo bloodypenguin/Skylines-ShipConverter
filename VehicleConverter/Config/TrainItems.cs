@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace VehicleConverter.Config
+namespace FerryConverter.Config
 {
     [Serializable]
     public class TrainItems

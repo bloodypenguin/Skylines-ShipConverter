@@ -1,6 +1,6 @@
-﻿using VehicleConverter.OptionsFramework.Attibutes;
+﻿using FerryConverter.OptionsFramework.Attibutes;
 
-namespace VehicleConverter.OptionsFramework.Extensions
+namespace FerryConverter.OptionsFramework.Extensions
 {
     public static class CommonExtensions
     {

@@ -9,7 +9,7 @@ using ColossalFramework.UI;
 using ICities;
 using UnityEngine;
 
-namespace VehicleConverter
+namespace FerryConverter
 {
     public static class Util
     {

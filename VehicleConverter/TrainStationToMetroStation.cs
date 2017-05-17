@@ -3,9 +3,9 @@ using System.Collections;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
-using VehicleConverter.Config;
+using FerryConverter.Config;
 
-namespace VehicleConverter
+namespace FerryConverter
 {
     public static class TrainStationToMetroStation
     {

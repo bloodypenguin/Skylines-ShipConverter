@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VehicleConverter.Config
+namespace FerryConverter.Config
 {
     [Flags]
     public enum TrainCategory

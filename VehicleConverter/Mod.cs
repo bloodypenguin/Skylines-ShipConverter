@@ -6,17 +6,17 @@ using ColossalFramework.UI;
 using ICities;
 using UnityEngine;
 #if DEBUG
-using VehicleConverter.Config;
+using FerryConverter.Config;
 #endif
-using VehicleConverter.OptionsFramework;
-using VehicleConverter.OptionsFramework.Extensions;
+using FerryConverter.OptionsFramework;
+using FerryConverter.OptionsFramework.Extensions;
 
-namespace VehicleConverter
+namespace FerryConverter
 {
     public class Mod : IUserMod
     {
-        public string Name => "Train Converter";
-        public string Description => "Converts tram-trains and metro-trains to actual trams and trains, accordingly";
+        public string Name => "Ferry Converter";
+        public string Description => "Converts regular ships into Mass Transit ferries";
 
         public void OnSettingsUI(UIHelperBase helper)
         {
@@ -56,7 +56,7 @@ namespace VehicleConverter
                 }
                 exceptionPanel.SetMessage(
                 "Malformed XML config",
-                "There was an error reading Train Converter XML config:\n" + e.Message + "\n\nFalling back to default config...",
+                "There was an error reading Ferry Converter XML config:\n" + e.Message + "\n\nFalling back to default config...",
                 true);
                 GameObject.Destroy(this.gameObject);
             }

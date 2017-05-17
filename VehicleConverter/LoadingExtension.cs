@@ -7,10 +7,10 @@ using ColossalFramework.UI;
 using ICities;
 using PrefabHook;
 using UnityEngine;
-using VehicleConverter.Config;
-using VehicleConverter.OptionsFramework;
+using FerryConverter.Config;
+using FerryConverter.OptionsFramework;
 
-namespace VehicleConverter
+namespace FerryConverter
 {
     public class LoadingExtension : LoadingExtensionBase
     {
@@ -123,7 +123,7 @@ namespace VehicleConverter
             {
                 UIView.library.ShowModal<ExceptionPanel>("ExceptionPanel").SetMessage(
                     "Missing dependency",
-                    "'VehicleConverter' mod requires the 'Prefab Hook' mod to work properly. Please subscribe to the mod and restart the game!",
+                    "'FerryConverter' mod requires the 'Prefab Hook' mod to work properly. Please subscribe to the mod and restart the game!",
                     false);
                 return;
             }
