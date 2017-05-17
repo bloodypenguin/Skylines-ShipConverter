@@ -6,9 +6,9 @@ using System.Xml.Serialization;
 namespace FerryConverter.Config
 {
     [Serializable]
-    public class HarborItem
+    public class BuildingItem
     {
-        public HarborItem()
+        public BuildingItem()
         {
             Exclude = false;
             WorkshopId = -1;
@@ -16,7 +16,7 @@ namespace FerryConverter.Config
             ToDecoration = false;
         }
 
-        public HarborItem(long workshoId, string description, bool toDecoration = false)
+        public BuildingItem(long workshoId, string description, bool toDecoration = false)
         {
             Exclude = false;
             Description = description;

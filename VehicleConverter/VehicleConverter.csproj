@@ -31,14 +31,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Cache.cs" />
-    <Compile Include="Config\HarborCategory.cs" />
+    <Compile Include="Config\BuildingCategory.cs" />
     <Compile Include="Config\ShipCategory.cs" />
     <Compile Include="Config\Config.cs" />
-    <Compile Include="Config\HarborItem.cs" />
+    <Compile Include="Config\BuildingItem.cs" />
     <Compile Include="Config\ShipItem.cs" />
-    <Compile Include="Config\HarborItems.cs" />
+    <Compile Include="Config\BuidlingItems.cs" />
     <Compile Include="Config\ShipItems.cs" />
-    <Compile Include="Config\Harbors.cs" />
+    <Compile Include="Config\Buildings.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="LoadingExtension.cs" />
     <Compile Include="Options.cs" />
@@ -52,12 +52,11 @@
     <Compile Include="OptionsFramework\Extensions\UIHelperBaseExtensions.cs" />
     <Compile Include="OptionsFramework\OptionsWrapper.cs" />
     <Compile Include="OptionsFramework\Util.cs" />
+    <Compile Include="PatchShipBuildingShader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Config\Ships.cs" />
     <Compile Include="ShipToFerry.cs" />
     <Compile Include="TrainStationToMetroStation.cs" />
-    <Compile Include="TrainToMetro.cs" />
-    <Compile Include="TrainToTram.cs" />
     <Compile Include="Tuple.cs" />
     <Compile Include="Util.cs" />
   </ItemGroup>

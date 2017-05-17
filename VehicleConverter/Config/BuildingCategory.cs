@@ -3,10 +3,11 @@
 namespace FerryConverter.Config
 {
     [Flags]
-    public enum HarborCategory
+    public enum BuildingCategory
     {
         None = 0,
         PassengerShipHarbor = 1,
-        All = PassengerShipHarbor
+        ShipBuilding = 2,
+        All = PassengerShipHarbor | ShipBuilding
     }
 }

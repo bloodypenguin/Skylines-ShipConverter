@@ -45,14 +45,14 @@ namespace FerryConverter
                 };
                 VehicleInfoHook.Deploy();
             }
-            if (Util.DLC(SteamHelper.kMotionDLCAppID) && 
-                (OptionsWrapper<Options>.Options.ConvertPassengerHarborsToFerryStops))
+            if ((Util.DLC(SteamHelper.kMotionDLCAppID) && 
+                OptionsWrapper<Options>.Options.ConvertPassengerHarborsToFerryStops) || OptionsWrapper<Options>.Options.PatchShipBuildinsShaders)
             {
                 BuildingInfoHook.OnPreInitialization += info =>
                 {
                     try
                     {
-                        TrainStationToMetroStation.Convert(info);
+                        PatchShipBuildingShader.Convert(info);
                     }
                     catch (Exception e)
                     {
