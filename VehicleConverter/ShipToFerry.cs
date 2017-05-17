@@ -41,6 +41,9 @@ namespace FerryConverter
             info.m_maxSpeed = ferry.m_maxSpeed;
             info.m_nodMultiplier = ferry.m_nodMultiplier;
 
+            var effect = ferry.m_effects.Where(e => e.m_effect.name == "Ferry Movement").First();
+            info.m_effects = info.m_effects.Where(e => e.m_effect.name == "Ship Movement").Select(e => effect).ToArray();
+
             return true;
         }
     }
