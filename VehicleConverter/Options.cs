@@ -6,46 +6,21 @@ namespace FerryConverter
     [Options("FerryConverter-Options")]
     public class Options
     {
-        private const string MOM = "Trains to metro - Require Metro Overhaul Mod (MOM)";
-        private const string SNOWFALL = "Trains to trams - Require Snowfall DLC";
-        private const string STATIONS = "Train Stations to metro stations - Require Metro Overhaul Mod (MOM)";
+        private const string FERRIES = "Trains to trams - Require Snowfall DLC";
+        private const string HARBORS = "Passenger Ship Harbors to Ferry Stops";
 
         public Options()
         {
-            ConvertTrainsToTrams = true;
-            ConvertSubwayTrainsToMetros = true;
-            ConvertSBahnsToMetros = true;
-            ConvertPantographsToMetros = false;
-            ConvertModernStationsToMetroStations = true;
-            ConvertOldStationsToMetroStations = true;
-            ConvertTramStationsToMetroStations = false;
+            ConvertPassengerShipsToFerries = true;
+            ConvertPassengerHarborsToFerryStops = true;
         }
 
-        [XmlElement("convert-subway-trains-to-metros")]
-        [Checkbox("Convert subway trains to metros", null, null, MOM)]
-        public bool ConvertSubwayTrainsToMetros { set; get; }
+        [XmlElement("convert-passenger-ships-to-ferries")]
+        [Checkbox("Convert some passenger ships to Mass Transit ferries", null, null, FERRIES)]
+        public bool ConvertPassengerShipsToFerries { set; get; }
 
-        [XmlElement("convert-s-bahn-trains-to-metros")]
-        [Checkbox("Convert S-Bahn/Overground trains to metros", null, null, MOM)]
-        public bool ConvertSBahnsToMetros { set; get; }
-
-
-        [XmlElement("convert-pantograph-trains-to-metros")]
-        [Checkbox("Convert pantograph trains to metros", null, null, MOM)]
-        public bool ConvertPantographsToMetros { set; get; }
-
-        [XmlElement("convert-tram-trains-to-trams")]
-        [Checkbox("Convert tram-trains to Snowfall trams", null, null, SNOWFALL)]
-        public bool ConvertTrainsToTrams { set; get; }
-
-        [XmlElement("convert-modern-train-stations-to-metro-stations")]
-        [Checkbox("Convert some Modern Style stations to metro stations", null, null, STATIONS)]
-        public bool ConvertModernStationsToMetroStations { set; get; }
-        [XmlElement("convert-old-train-stations-to-metro-stations")]
-        [Checkbox("Convert some Old Style stations to metro stations (Steel style used if enabled)", null, null, STATIONS)]
-        public bool ConvertOldStationsToMetroStations { set; get; }
-        [XmlElement("convert-tram-train-stations-to-metro-stations")]
-        [Checkbox("Convert some 'tram' stations to metro stations", null, null, STATIONS)]
-        public bool ConvertTramStationsToMetroStations { set; get; }
+        [XmlElement("convert-passenger-harbors-to-ferry-stops")]
+        [Checkbox("Convert some passenger ship harbors to ferry stops", null, null, HARBORS)]
+        public bool ConvertPassengerHarborsToFerryStops { set; get; }
     }
 }

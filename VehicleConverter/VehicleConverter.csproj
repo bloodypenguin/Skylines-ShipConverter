@@ -31,14 +31,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Cache.cs" />
-    <Compile Include="Config\StationCategory.cs" />
-    <Compile Include="Config\TrainCategory.cs" />
+    <Compile Include="Config\HarborCategory.cs" />
+    <Compile Include="Config\ShipCategory.cs" />
     <Compile Include="Config\Config.cs" />
-    <Compile Include="Config\StationItem.cs" />
-    <Compile Include="Config\TrainItem.cs" />
-    <Compile Include="Config\StationItems.cs" />
-    <Compile Include="Config\TrainItems.cs" />
-    <Compile Include="Config\Stations.cs" />
+    <Compile Include="Config\HarborItem.cs" />
+    <Compile Include="Config\ShipItem.cs" />
+    <Compile Include="Config\HarborItems.cs" />
+    <Compile Include="Config\ShipItems.cs" />
+    <Compile Include="Config\Harbors.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="LoadingExtension.cs" />
     <Compile Include="Options.cs" />
@@ -53,8 +53,8 @@
     <Compile Include="OptionsFramework\OptionsWrapper.cs" />
     <Compile Include="OptionsFramework\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Config\Trains.cs" />
-    <Compile Include="TrainConversions.cs" />
+    <Compile Include="Config\Ships.cs" />
+    <Compile Include="ShipToFerry.cs" />
     <Compile Include="TrainStationToMetroStation.cs" />
     <Compile Include="TrainToMetro.cs" />
     <Compile Include="TrainToTram.cs" />

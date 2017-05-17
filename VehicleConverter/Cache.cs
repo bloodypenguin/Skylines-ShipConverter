@@ -6,6 +6,8 @@
         private static TransportInfo _metroTransport;
         private static VehicleInfo _tramVehicle;
         private static TransportInfo _tramTransport;
+        private static VehicleInfo _ferryVehicle;
+        private static TransportInfo _ferryTransport;
 
         public static VehicleInfo MetroVehicle
         {
@@ -31,12 +33,26 @@
             private set { _tramTransport = value; }
         }
 
+        public static VehicleInfo FerryVehicle
+        {
+            get { return _ferryVehicle ?? (_ferryVehicle = PrefabCollection<VehicleInfo>.FindLoaded("Ferry")); }
+            private set { _ferryVehicle = value; }
+        }
+
+        public static TransportInfo FerryTransport
+        {
+            get { return _ferryTransport ?? (_ferryTransport = PrefabCollection<TransportInfo>.FindLoaded("Ferry")); }
+            private set { _ferryTransport = value; }
+        }
+
         public static void Reset()
         {
             MetroVehicle = null;
             MetroTransport = null;
             TramTransport = null;
             TramVehicle = null;
+            FerryVehicle = null;
+            FerryTransport = null;
         }
     }
 }

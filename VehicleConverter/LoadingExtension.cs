@@ -22,27 +22,19 @@ namespace FerryConverter
             {
                 return;
             }
-            var isModActive = Util.IsModActive("Metro Overhaul");
-            if ((isModActive || Util.DLC(SteamHelper.kWinterDLCAppID)) &&
-                (OptionsWrapper<Options>.Options.ConvertPantographsToMetros ||
-                 OptionsWrapper<Options>.Options.ConvertSBahnsToMetros ||
-                 OptionsWrapper<Options>.Options.ConvertSubwayTrainsToMetros ||
-                 OptionsWrapper<Options>.Options.ConvertTrainsToTrams))
+            if (Util.DLC(SteamHelper.kMotionDLCAppID) &&
+                (OptionsWrapper<Options>.Options.ConvertPassengerShipsToFerries))
             {
 
                 VehicleInfoHook.OnPreInitialization += info =>
                 {
                     try
                     {
-                        if (info.m_class.m_subService == ItemClass.SubService.PublicTransportTrain)
+                        if (info.m_class.m_subService == ItemClass.SubService.PublicTransportShip && info.m_class.m_level == ItemClass.Level.Level1)
                         {
-                            if (isModActive)
+                            if (Util.DLC(SteamHelper.kMotionDLCAppID))
                             {
-                                TrainToMetro.Convert(info);
-                            }
-                            if (Util.DLC(SteamHelper.kWinterDLCAppID))
-                            {
-                                TrainToTram.Convert(info);
+                               ShipToFerry.Convert(info);
                             }
                         }
                     }
@@ -53,9 +45,8 @@ namespace FerryConverter
                 };
                 VehicleInfoHook.Deploy();
             }
-            if (isModActive && 
-                (OptionsWrapper<Options>.Options.ConvertModernStationsToMetroStations || OptionsWrapper<Options>.Options.ConvertOldStationsToMetroStations ||
-                OptionsWrapper<Options>.Options.ConvertTramStationsToMetroStations))
+            if (Util.DLC(SteamHelper.kMotionDLCAppID) && 
+                (OptionsWrapper<Options>.Options.ConvertPassengerHarborsToFerryStops))
             {
                 BuildingInfoHook.OnPreInitialization += info =>
                 {

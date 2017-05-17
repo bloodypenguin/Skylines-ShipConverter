@@ -5,19 +5,19 @@ using System.Xml.Serialization;
 namespace FerryConverter.Config
 {
     [Serializable]
-    public class StationItems
+    public class HarborItems
     {
-        public StationItems()
+        public HarborItems()
         {
-            this.Items = new List<StationItem>();
+            this.Items = new List<HarborItem>();
         }
 
-        public StationItems(List<StationItem> items)
+        public HarborItems(List<HarborItem> items)
         {
             this.Items = items;
         }
 
         [XmlElement("items")]
-        public List<StationItem> Items { get; private set; }
+        public List<HarborItem> Items { get; private set; }
     }
 }
