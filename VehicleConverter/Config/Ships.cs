@@ -13,8 +13,13 @@ namespace FerryConverter.Config
             {
                 ShipCategory.PassengerShip, new[]
                 {
+                    new ShipItem(456366973, "Catamaran Ferry (Passenger Ship)"), 
                     new ShipItem(476945352, "Ferry Ship"),
-                    new ShipItem(919952804, "StarFerry (Remake Version)"), 
+                    new ShipItem(919952804, "StarFerry (Remake Version)"),
+                    new ShipItem(773591637, "Passenger ferry - M/S Pernille - Sundbusserne"), 
+                    new ShipItem(667891104, "Small Ship"), 
+                    new ShipItem(467325398, "Steam Ship"), 
+                    new ShipItem(463237025, "River Ship"), 
                 }
             },
         };
