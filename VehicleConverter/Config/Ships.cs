@@ -19,7 +19,10 @@ namespace FerryConverter.Config
                     new ShipItem(773591637, "Passenger ferry - M/S Pernille - Sundbusserne"), 
                     new ShipItem(667891104, "Small Ship"), 
                     new ShipItem(467325398, "Steam Ship"), 
-                    new ShipItem(463237025, "River Ship"), 
+                    new ShipItem(463237025, "River Ship"),
+                    new ShipItem(463792833, "Catamaran"), 
+                    new ShipItem(680258855, "Passenger hydrofoil meteor"), 
+                    new ShipItem(579726271, "fishing boat"), 
                 }
             },
         };

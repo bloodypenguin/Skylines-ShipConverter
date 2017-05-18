@@ -20,6 +20,24 @@ namespace FerryConverter.Config
                 BuildingCategory.ShipBuilding, new[]
                 {
                     new BuildingItem(436874500, "Fishing Trawler Ship"),
+                    new BuildingItem(438644475, "Aircraft Carrier"),
+                    new BuildingItem(439334278, "Color Changing Cruiser - Solid"),
+                    new BuildingItem(439326155, "Color Changing Cruiser -Gradient"),
+                    new BuildingItem(437889905, "Hasuna WII Cargo Ship"),
+                    new BuildingItem(437640993, "Oil Tanker Ship (Park)"),
+                    new BuildingItem(437088425, "Tugboat"),
+                    new BuildingItem(437037088, "Fishing Vessel"),
+                    new BuildingItem(430845670, "50 meter Yacht"), //remove props?
+                    new BuildingItem(439558291, "Luxury Yacht - Color Changing"),  //remove props?
+                    new BuildingItem(436554307, "british frigate"), 
+                    new BuildingItem(448355071, "HarborPack by --VIP-- (building №2 Ship )"), 
+                    new BuildingItem(481423357, "Ocean Liner (stationary)"), 
+                    new BuildingItem(478150328, "small Motor Boat"), 
+                    new BuildingItem(478153907, "USS Missouri Battleship (BETA)"),  //remove props?
+                    new BuildingItem(705265644, "The scenery for the port .The cargo ship"), 
+                    new BuildingItem(661139666, "USS Missouri (BB-63) Battle Ship"), //remove props?
+                    new BuildingItem(563183620, "Ploppable Maersk Line Cargo Ship"), 
+                    new BuildingItem(682415206, "BATTLESHIP K.M.S. BISMARK (Beta)"), //remove props? 
                 }
             }
         };

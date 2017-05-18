@@ -15,8 +15,8 @@ namespace FerryConverter
 {
     public class Mod : IUserMod
     {
-        public string Name => "Ferry Converter";
-        public string Description => "Converts regular ships into Mass Transit ferries";
+        public string Name => "Ship Converter";
+        public string Description => "Converts regular ships into Mass Transit ferries and patches ship/boat buildings shaders for them to properly float on water";
 
         public void OnSettingsUI(UIHelperBase helper)
         {

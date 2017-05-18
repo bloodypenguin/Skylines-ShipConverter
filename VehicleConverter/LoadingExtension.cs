@@ -17,6 +17,8 @@ namespace FerryConverter
         public override void OnCreated(ILoading loading)
         {
             base.OnCreated(loading);
+            Util.AddLocale("BUILDING", "Boat Museum Steam Boat", "Boat Museum Steam Boat", "Comes with Mass Transit!");
+
             Cache.Reset();
             if (!IsHooked())
             {
@@ -50,6 +52,7 @@ namespace FerryConverter
             {
                 BuildingInfoHook.OnPreInitialization += info =>
                 {
+                    Bonus.apply(info);
                     try
                     {
                         PatchShipBuildingShader.Convert(info);
@@ -61,6 +64,20 @@ namespace FerryConverter
                 };
                 BuildingInfoHook.Deploy();
             }
+        }
+
+        private static void SetBonusThumb()
+        {
+            var prefab = PrefabCollection<BuildingInfo>.FindLoaded("Boat Museum Steam Boat");
+            if (prefab == null)
+            {
+                return;
+            }
+            var thumb = Util.LoadTextureFromAssembly("FerryConverter.thumb.png", false);
+            var atlas = Util.CreateAtlas(new[] {thumb});
+            prefab.m_Atlas = atlas;
+            prefab.m_Thumbnail = thumb.name;
+            prefab.m_InfoTooltipAtlas = atlas;
         }
 
         private static void ReleaseWrongVehiclesFromLines()
@@ -119,6 +136,7 @@ namespace FerryConverter
                 return;
             }
             SimulationManager.instance.AddAction(ReleaseWrongVehiclesFromLines);
+            SetBonusThumb();
         }
 
         public override void OnReleased()
