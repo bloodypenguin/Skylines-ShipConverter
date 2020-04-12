@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FerryConverter")]
+[assembly: AssemblyTitle("ShipConverter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FerryConverter")]
+[assembly: AssemblyProduct("ShipConverter")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e3192d1e-8e79-4ef3-a4c1-9b4aec3d584f")]
+[assembly: Guid("4cd38b78-9b7a-4c7e-9f59-5482e0a2f93e")]
 
 // Version information for an assembly consists of the following four values:
 //
