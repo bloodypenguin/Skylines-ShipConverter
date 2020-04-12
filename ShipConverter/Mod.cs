@@ -1,13 +1,7 @@
 ﻿using System;
-#if DEBUG
-using System.Linq;
-#endif
 using ColossalFramework.UI;
 using ICities;
 using UnityEngine;
-#if DEBUG
-using FerryConverter.Config;
-#endif
 using FerryConverter.OptionsFramework;
 using FerryConverter.OptionsFramework.Extensions;
 
@@ -30,16 +24,6 @@ namespace FerryConverter
                 var display = new GameObject().AddComponent<ErrorMessageDisplay>();
                 display.e = e;
             }
-#if DEBUG
-            UnityEngine.Debug.Log("Trains:");
-            var trains = Trains.GetConvertedIds();
-            Array.Sort(trains);
-            UnityEngine.Debug.Log(trains.Aggregate("", (current, convertedId) => current + $"http://steamcommunity.com/sharedfiles/filedetails/?id={convertedId}\n"));
-            UnityEngine.Debug.Log("Stations:");
-            var stations = Stations.GetConvertedIds();
-            Array.Sort(stations);
-            UnityEngine.Debug.Log(stations.Aggregate("", (current, convertedId) => current + $"http://steamcommunity.com/sharedfiles/filedetails/?id={convertedId}\n"));
-#endif
         }
 
 

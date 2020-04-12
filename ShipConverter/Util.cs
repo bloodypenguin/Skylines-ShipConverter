@@ -39,26 +39,6 @@ namespace FerryConverter
             return long.TryParse(idStr, out workshopId);
         }
 
-        public static Type FindType(string className)
-        {
-            foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
-            {
-                try
-                {
-                    var types = assembly.GetTypes();
-                    foreach (var type in types.Where(type => type.Name == className))
-                    {
-                        return type;
-                    }
-                }
-                catch
-                {
-                    // ignored
-                }
-            }
-            return null;
-        }
-
         public static bool IsModActive(string modName)
         {
             var plugins = PluginManager.instance.GetPluginsInfo();
@@ -68,18 +48,6 @@ namespace FerryConverter
                     select instances[0].Name into name
                     where name == modName
                     select name).Any();
-        }
-
-        public static void AddRange<T>(this ICollection<T> target, IEnumerable<T> source)
-        {
-            if (target == null)
-                throw new ArgumentNullException(nameof(target));
-            if (source == null)
-            {
-                return;
-            }
-            foreach (var element in source)
-                target.Add(element);
         }
 
         public static Texture2D LoadTextureFromAssembly(string path, bool readOnly = true)
